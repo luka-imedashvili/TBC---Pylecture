@@ -1,0 +1,449 @@
+header {
+  padding-top: 21px;
+  background-color: $back-color;
+  padding-bottom: 33px;
+  .container {
+    @include container;
+    ul {
+      display: flex;
+      justify-content: start;
+      gap: 35px;
+      align-items: center;
+      li {
+        a {
+          color: $main-color;
+          font-family: $main-font;
+        }
+        img {
+          width: 35px;
+          height: 35px;
+
+          border-radius: 90px;
+        }
+      }
+    }
+  }
+}
+
+.pg1-s-1 {
+  height: 606px;
+  background-image: url(https://a0.muscache.com/im/pictures/INTERNAL/INTERNAL-ImageByPlaceId-ChIJY2xxEcdKWxMRHS2a3HUXOjY-large_background/original/5e82febd-f97e-408a-ae87-edb163498a74.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include goflex(column, center, center, nowrap);
+  .container {
+    max-width: 1165px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .textwrapper {
+    display: flex;
+    @include goflex(column, center, center, nowrap);
+    h2 {
+      color: $s1-text-color;
+      font-family: $main-font;
+      font-size: 79px;
+      font-weight: 700;
+      max-width: 625px;
+      text-align: center;
+      @media (max-width: 656px) {
+        font-size: 60px;
+      }
+    }
+    h4 {
+      color: $s1-text-color;
+      font-family: $main-font;
+      font-size: 19px;
+      font-weight: 400;
+      @media (max-width: 656px) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.pg1-s-2 {
+  padding-top: 85px;
+  padding-bottom: 140px;
+  background-color: $back-color;
+  .container {
+    max-width: 1165px;
+    width: 95%;
+    margin: 0 auto;
+    .cardwrapper1 {
+      @include goflex(column, center, start, wrap);
+      max-width: 234.5px;
+      width: 100%;
+      @media (max-width: 970px) {
+        max-width: 450px;
+      }
+      @media (max-width: 637px) {
+        max-width: 286px;
+        width: 95%;
+      }
+      h4 {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: #010101;
+        font-family: $main-font;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 37px;
+      }
+      p {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+        font-style: normal;
+      }
+    }
+    .cardwrapper2 {
+      @include goflex(row, center, flex-start, wrap);
+      column-gap: 100px;
+      row-gap: 33px;
+      .card {
+        max-width: 286px;
+        width: 100%;
+        img {
+          margin-bottom: 23px;
+        }
+        h3 {
+          font-family: $main-font;
+          color: #343232;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+        p {
+          font-family: $main-font;
+          color: $main-color;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: normal;
+        }
+        img {
+          max-width: 286px;
+          height: 200px;
+          width: 100%;
+          @media (max-width: 340px) {
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+  .s-2wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 83px;
+    @media (max-width: 970px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.s-1 {
+  background-color: $back-color;
+  display: flex;
+  .container {
+    @include container;
+    .tranding {
+      font-size: 24px;
+      font-family: $main-font;
+      color: $main-color;
+      font-weight: $main-weight;
+      margin-bottom: 27px;
+    }
+    .cardswrapper {
+      padding-bottom: 57px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card {
+      @include card;
+    }
+    .backgimgdiv1 {
+      background-image: url(https://media.istockphoto.com/id/1145450965/photo/santorini-island-greece.jpg?s=612x612&w=0&k=20&c=AY_kxRrkTjbDLhqpotxgW8CZp4ovEIM1tRdTrvXKcAM=);
+      background-size: cover;
+    }
+    .backgimgdiv2 {
+      background-image: url(https://media.traveldepartment.com/dmxa8n1ci/image/upload/g_auto,f_auto,q_auto:best,c_fill,w_960,h_636/v1708425406/experience_the_island_of_hydra_04c8f68486);
+      background-size: cover;
+    }
+    .backgimgdiv3 {
+      background-image: url(https://worldwildschooling.com/wp-content/uploads/2024/05/Places-in-Greece_Hydra-Town-Hydra_Kirk-Fisher_Adobe-Stock-Photo_482956947-1024x576.jpg);
+      background-size: cover;
+    }
+    .backgimgdiv {
+      @include backimgdiv;
+      h2 {
+        @include backgroundimgtext;
+      }
+    }
+    .textwrapper {
+      @include textwrapper;
+      p {
+        @include cardp;
+      }
+    }
+    .iconwrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i {
+        color: $card-font-color;
+      }
+    }
+  }
+}
+.pg3-section {
+  background-color: $back-color;
+  padding-bottom: 57px;
+  .container {
+    max-width: 1146px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    max-width: 375px;
+    width: 95%;
+  }
+  .wrapper h4,
+  .wrapper3 h4 {
+    color: #6c75d6;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .wrapper h2,
+  .wrapper3 h2 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.pg3-s-1 {
+  background-color: $back-color;
+  #description {
+    max-width: 756px;
+    width: 100%;
+    height: 298px;
+    padding: 23px 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 2px solid rgba(212, 211, 211, 0.3);
+    background-color: #f8f8f8;
+    color: #99999a;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #description::-webkit-input-placeholder {
+    position: absolute;
+    top: 23px;
+  }
+  #description::-moz-placeholder {
+    position: absolute;
+    top: 23px;
+  }
+  #description:-ms-input-placeholder {
+    position: absolute;
+    top: 23px;
+  }
+  #description::-ms-input-placeholder {
+    position: absolute;
+    top: 23px;
+  }
+  #description::placeholder {
+    position: absolute;
+    top: 23px;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 756px;
+    width: 100%;
+  }
+  .form2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 370px;
+    width: 100%;
+  }
+  .form2 input {
+    padding: 20px;
+    font-family: "Roboto";
+    border: 2px solid rgba(212, 211, 211, 0.3);
+    background-color: #f8f8f8;
+  }
+  #submit {
+    color: #fbfbff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #5968f4;
+  }
+}
+.pg3-s-2 {
+  background-color: $back-color;
+  padding: 50px 0;
+  .s-2container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .icondiv {
+    background-color: #5968f4;
+    border-radius: 40px;
+    width: 68px;
+    height: 68px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .fa-envelope {
+    color: #344188;
+    font-size: 40px;
+  }
+  .fa-phone {
+    color: #344188;
+    font-size: 35px;
+  }
+  .fa-location-dot {
+    color: #344188;
+    font-size: 35px;
+  }
+  .wrapper2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .wrapper2 h4 {
+    color: #4e4d54;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .wrapper2 a {
+    color: #99999a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+footer {
+  background-color: $footer-back-color;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  .container {
+    @include container;
+    .listwrapper {
+      display: flex;
+      gap: 75px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        a {
+          font-family: $main-font;
+          font-size: 12px;
+          color: $footer-text-color;
+          font-weight: $main-weight;
+        }
+      }
+    }
+    .logowrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 700px;
+      p {
+        color: $secondary-color;
+        font-size: 12px;
+        font-family: $main-font;
+        font-weight: 400;
+      }
+      img {
+        height: 40px;
+      }
+    }
+  }
+  .footercontainer {
+    display: flex;
+    gap: 112px;
+  }
+}
